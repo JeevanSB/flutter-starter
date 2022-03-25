@@ -19,16 +19,19 @@ class AppConfigResponse {
 
 class AppConfig {
   late String config;
+  late String buildNumber;
 
   AppConfig({required this.config});
 
   AppConfig.fromJson(Map<String, dynamic> json) {
     config = json['config'];
+    buildNumber = json['buildNumber'];
   }
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = <String, dynamic>{};
     data['config'] = config;
+    data['buildNumber'] = buildNumber;
     return data;
   }
 }

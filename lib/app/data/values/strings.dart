@@ -7,6 +7,10 @@ class Strings {
   static const getOTP = 'Get OTP';
   static const retry = 'Retry';
   static const goBack = 'Go Back';
+  static const update = 'Update';
+  static const updateApp = 'Update App';
+  static const updateAvailable =
+      'A new version of the application is available. Please update to continue.';
 }
 
 class ErrorMessages {

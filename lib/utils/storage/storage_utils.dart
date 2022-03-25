@@ -20,6 +20,8 @@ class Storage {
       _box.write(StorageKeys.USER, user?.toJson());
 
   static bool isUserExists() => _box.read(StorageKeys.USER) != null;
+
+  static bool isAppConfigExists() => _box.read(StorageKeys.APP_CONFIG) != null;
 }
 
 class StorageKeys {
