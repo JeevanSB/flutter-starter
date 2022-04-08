@@ -19,7 +19,7 @@ class NetworkRequester {
       connectTimeout: Timeouts.CONNECT_TIMEOUT,
       receiveTimeout: Timeouts.RECEIVE_TIMEOUT,
       baseUrl: Env.baseURL,
-      contentType: Headers.formUrlEncodedContentType,
+      contentType: Headers.jsonContentType,
       responseType: ResponseType.json,
       headers: {'Accept': Headers.jsonContentType},
     );
